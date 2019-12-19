@@ -10,7 +10,7 @@ const SignUpButton = styled(Button)`
   font-size: 1rem;
 
   @media(min-width: 750px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `
 
