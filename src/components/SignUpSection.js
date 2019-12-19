@@ -5,23 +5,36 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const Div = styled.div`
-  text-align: center;
+  text-align: left;
+  padding: 1rem;
+
+  @media(min-width: 750px){
+    padding: 4rem;
+  }
 `
 
 const H1 = styled.h1`
   color: white;
   margin: 0;
   font-family: "Helvetica Neue";
-  font-size: 4rem;
-  letter-spacing: 0.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+  @media(min-width: 750px){
+    font-size: 3rem;
+  }
 `
 
-const H2 = styled.h2`
+const P = styled.p`
   color: white;
   margin: 0;
   font-family: "Helvetica Neue";
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  line-height: 4rem;
+
+  @media(min-width: 750px){
+    font-size: 2rem;
+  }
 `
 
 const SignUpSection = ({ className }) => (
@@ -48,8 +61,11 @@ query {
           backgroundColor={`#040e18`}
         >
           <Div>
-            <H1>SkrrtSkrrt</H1>
-            <H2>Welcome to the future of Transportation</H2>
+            <H1>Burn Rubber, Not Gas.</H1>
+            <H1>No Contract.</H1>
+            <H1>No BS.</H1>
+            <H1>Get Where Your Going.</H1>
+            <P>Sign up for our beta launching in two weeks</P>
 
           </Div>
 
@@ -67,7 +83,7 @@ const StyledSignUpSection = styled(SignUpSection)`
   background-repeat: repeat-y;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 `
 
