@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
-
 import Button from 'react-bootstrap/Button';
 
 import BackgroundImage from 'gatsby-background-image'
@@ -93,9 +92,11 @@ const SignUpSection = ({ className }) => (
             {/* #TODO Get early access to the beta in two weeks */}
             {/* #TODO Bold, small, move to top left*/}
 
-            <SignUpButton variant="outline-light">
-              Sign up now
-            </SignUpButton>
+            <a href="https://forms.gle/qvcyuVNoCfNGfrs88">
+              <SignUpButton variant="outline-light" onclick>
+                Sign up now
+              </SignUpButton>
+            </a>
 
           </Div>
 
